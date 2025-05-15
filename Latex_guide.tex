@@ -1,0 +1,34 @@
+\documentclass[french,a4paper,10pt]{article}
+\input{./common/common.tex}
+\input{./common/math.tex}
+\input{./common/theorems.tex}
+\usepackage[a4paper,hmargin=30mm,vmargin=30mm]{geometry}
+
+\title{\color{astral} \sffamily \bfseries A Latex Guide}
+\author{Ivan Lejeune}
+\date{\today}
+
+% \toggletrue{showsolutions}
+
+% latexmk Latex_guide.tex -pdf -output-directory=./output && mv ./output/Latex_guide.pdf ./
+
+\begin{document}
+
+    \input{./0_Front_page/front_page_main.tex}
+    \newpage
+
+    \tableofcontents
+    \newpage
+
+    \section{Introduction}\label{sec:intro}
+    % \setcounter{section}{0}
+    % \setcounter{tdcounter}{0}
+    \input{./1_Introduction/introduction_main.tex}
+    \newpage
+
+    \section{Installation}\label{sec:installation}
+    \input{./2_Installation/installation_main.tex}
+    \newpage
+
+
+\end{document}

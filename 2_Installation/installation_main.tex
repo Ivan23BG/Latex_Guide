@@ -1,0 +1,98 @@
+Dans cette section nous allons voir comment installer LaTeX sur votre machine.
+Nous allons également voir comment installer un éditeur de texte adapté pour LaTeX.
+
+\subsection{LaTeX en ligne}\label{subsec:latex_online}
+
+Il existe plusieurs éditeurs en ligne qui vous permettent de rédiger vos documents LaTeX sans avoir à installer quoi que ce soit sur votre machine.
+Ces éditeurs sont particulièrement utiles si vous souhaitez partager votre document avec d'autres personnes ou si vous travaillez sur plusieurs machines.
+
+\begin{itemize}
+    \item \textbf{Overleaf}: C'est l'éditeur en ligne le plus populaire. 
+    Il offre une interface conviviale et de nombreuses fonctionnalités, y compris la collaboration en temps réel.
+    \item \textbf{ShareLaTeX}: Un autre éditeur en ligne qui offre des fonctionnalités similaires à Overleaf.
+    \item \textbf{Authorea}: Un éditeur en ligne qui se concentre sur la rédaction scientifique et la collaboration. 
+    Il prend en charge LaTeX ainsi que d'autres formats de rédaction.
+\end{itemize}
+
+Ces éditeurs en ligne sont gratuits, mais ils offrent également des options payantes pour des fonctionnalités avancées.
+
+Personnellement je n'utilise pas d'éditeur en ligne mais c'est avec ça que j'ai commencé et je
+trouve important de les mentionner.
+
+\subsection{Installation de LaTeX}\label{subsec:latex_installation}
+
+Pour installer LaTeX sur votre machine, vous devez télécharger et installer une distribution LaTeX.
+Il existe plusieurs distributions LaTeX disponibles selon votre système d'exploitation:
+
+\begin{itemize}
+    \item \textbf{TeX Live}: C'est la distribution LaTeX la plus populaire et elle est disponible pour Windows, macOS et Linux,
+    \item \textbf{MiKTeX}: Une autre distribution LaTeX populaire, principalement pour Windows,
+    \item \textbf{MacTeX}: Une distribution LaTeX spécialement conçue pour macOS.
+\end{itemize}
+
+J'utilise personnellement \textbf{MiKTeX} sur Windows.
+
+\subsection{Installation de l'éditeur de texte}\label{subsec:editor_installation}
+
+Il existe de nombreux éditeurs de texte que vous pouvez utiliser pour rédiger vos documents LaTeX.
+Certains sont spécialement conçus pour LaTeX, tandis que d'autres sont des éditeurs de texte généraux.
+Je vous conseille d'utiliser un éditeur de texte avec lequel vous êtes à l'aise. En voici quelques-uns:
+
+\begin{itemize}
+    \item \textbf{TeXworks}: Un éditeur de texte simple et léger, spécialement conçu pour LaTeX.
+    \item \textbf{TeXstudio}: Un éditeur de texte plus avancé avec de nombreuses fonctionnalités, 
+    y compris la complétion automatique, la gestion des références bibliographiques et l'utilisation de macros.
+    \item \textbf{VSCode}: Un éditeur de texte polyvalent qui prend en charge LaTeX via des extensions.
+\end{itemize}
+
+J'ai commencé par Overleaf, puis j'ai utilisé TeXstudio pendant un certain temps avant de passer à VSCode.
+
+\subsection{Tester son installation}\label{subsec:test_installation}
+
+Pour tester votre installation, vous pouvez créer un document LaTeX simple et le compiler:
+
+\begin{enumerate}
+    \item Créez un nouveau fichier \texttt{test.tex} dans votre éditeur de texte,
+    \item Copiez le code suivant dans le fichier: %\lstinputlisting{resources/test.tex}
+\begin{lstlisting}[style=latexstyle]
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Hello, \LaTeX{}!
+\end{document}
+\end{lstlisting}
+    \item Compilez le fichier en ligne de commande par exemple avec \texttt{pdflatex test.tex}.
+\end{enumerate}
+
+Si tout fonctionne correctement, vous devriez obtenir un fichier PDF nommé \texttt{test.pdf} contenant le texte \og{}Hello, LaTeX!\fg{} et une équation intégrale.
+
+Si vous obtenez également plein d'autres fichiers, ne paniquez pas, c'est normal.
+LaTeX génère plusieurs fichiers auxiliaires lors de la compilation, on verra comment les utiliser plus tard.
+
+\subsection{Options avancées}\label{subsec:advanced_options}
+
+Si vous souhaitez aller plus loin, il existe plusieurs options avancées pour personnaliser votre installation LaTeX.
+
+\subsubsection{Gestion des packages}\label{subsubsec:package_management}
+
+La première étape importante pour écrire des documents avancés est de gérer ses packages.
+
+LaTeX utilise des packages pour ajouter des fonctionnalités supplémentaires à votre document.
+Vous pouvez installer des packages supplémentaires en utilisant le gestionnaire de packages de votre distribution LaTeX
+ou en les téléchargeant manuellement.
+
+\subsubsection{Compilateurs}\label{subsubsec:compilers}
+
+LaTeX prend en charge plusieurs compilateurs, chacun ayant ses propres avantages et inconvénients.
+Les plus courants sont:
+
+\begin{itemize}
+    \item \textbf{pdfLaTeX}: Le compilateur par défaut, qui génère des fichiers PDF,
+    \item \textbf{XeLaTeX}: Un compilateur qui prend en charge les polices OpenType et TrueType,
+    ainsi que les langues non latines,
+    \item \textbf{LuaLaTeX}: Un compilateur qui utilise le moteur Lua pour la programmation et la personnalisation avancée,
+    \item \textbf{Latexmk}: Un script Perl qui automatise le processus de compilation de documents LaTeX.
+\end{itemize}
+
+Pour des documents simples, pdfLaTeX est généralement suffisant.
+Pour des projets plus avancés il est souvent préférable de passer plutôt par Latexmk.
