@@ -1,85 +1,147 @@
-Dans cette section nous allons voir comment installer LaTeX sur votre machine.
-Nous allons également voir comment installer un éditeur de texte adapté pour LaTeX.
+\section{Installation et premiers pas}\label{sec:installation}
+Dans cette section nous allons voir comment préparer
+votre environnement de travail pour écrire des documents LaTeX.
 
-\subsection{LaTeX en ligne}\label{subsec:latex_online}
+\subsection{Quelle plateforme utiliser?}\label{subsec:platform_choice}
+Il existe plusieurs plateformes pour rédiger des documents LaTeX, je vais vous 
+en présenter quelques-unes ci-dessous. Dans la suite du document, 
+le symbole \(\color{astral}\star\) sera utilisé pour indiquer mes recommandations
+et le symbole \(\color{astral}\star\star\) pour ce que j'utilise personnellement.
+
+\subsubsection{Éditeurs en ligne}\label{subsubsec:online_editors}
 
 Il existe plusieurs éditeurs en ligne qui vous permettent de rédiger vos documents LaTeX sans avoir à installer quoi que ce soit sur votre machine.
-Ces éditeurs sont particulièrement utiles si vous souhaitez partager votre document avec d'autres personnes ou si vous travaillez sur plusieurs machines.
-
+Ces éditeurs sont particulièrement utiles dans les scénarios suivants:
 \begin{itemize}
-    \item \textbf{Overleaf}: C'est l'éditeur en ligne le plus populaire. 
-    Il offre une interface conviviale et de nombreuses fonctionnalités, y compris la collaboration en temps réel.
-    \item \textbf{ShareLaTeX}: Un autre éditeur en ligne qui offre des fonctionnalités similaires à Overleaf.
-    \item \textbf{Authorea}: Un éditeur en ligne qui se concentre sur la rédaction scientifique et la collaboration. 
-    Il prend en charge LaTeX ainsi que d'autres formats de rédaction.
+    \item Si vous souhaitez commencer rapidement sans vous soucier de l'installation,
+    \item Si vous travaillez en collaboration avec d'autres personnes,
+    \item Si vous souhaitez accéder à vos documents depuis n'importe quelle machine.
 \end{itemize}
+
+Les éditeurs en ligne les plus populaires sont:
+\begin{itemize}
+    \item \textbf{Overleaf}\(\color{astral}\star\): C'est l'éditeur en ligne le plus populaire.
+    Il offre une interface conviviale et de nombreuses fonctionnalités, y compris la collaboration en temps réel.
+
+    \item \textbf{ShareLaTeX}: Un autre éditeur en ligne qui offre des fonctionnalités similaires à Overleaf.
+    \item \textbf{Authorea}: Un éditeur en ligne qui se concentre sur la rédaction scientifique et la collaboration.
+\end{itemize}
+
 
 Ces éditeurs en ligne sont gratuits, mais ils offrent également des options payantes pour des fonctionnalités avancées.
 
 Personnellement je n'utilise pas d'éditeur en ligne mais c'est avec ça que j'ai commencé et je
 trouve important de les mentionner.
 
-\subsection{Installation de LaTeX}\label{subsec:latex_installation}
-
-Pour installer LaTeX sur votre machine, vous devez télécharger et installer une distribution LaTeX.
-Il existe plusieurs distributions LaTeX disponibles selon votre système d'exploitation:
+\subsubsection{Éditeurs de texte locaux}\label{subsubsec:local_editors}
+Si vous préférez travailler sur votre machine locale, il existe de nombreux éditeurs de texte que vous pouvez utiliser pour rédiger vos documents LaTeX.
+Ces éditeurs sont particulièrement utiles dans les scénarios suivants:
 
 \begin{itemize}
-    \item \textbf{TeX Live}: C'est la distribution LaTeX la plus populaire et elle est disponible pour Windows, macOS et Linux,
-    \item \textbf{MiKTeX}: Une autre distribution LaTeX populaire, principalement pour Windows,
-    \item \textbf{MacTeX}: Une distribution LaTeX spécialement conçue pour macOS.
+    \item Si vous souhaitez avoir un contrôle total sur votre environnement de travail,
+    \item Si vous travaillez sur des projets plus complexes qui nécessitent une configuration spécifique,
+    \item Si vous préférez travailler hors ligne.
 \end{itemize}
 
-J'utilise personnellement \textbf{MiKTeX} sur Windows.
-
-\subsection{Installation de l'éditeur de texte}\label{subsec:editor_installation}
-
-Il existe de nombreux éditeurs de texte que vous pouvez utiliser pour rédiger vos documents LaTeX.
-Certains sont spécialement conçus pour LaTeX, tandis que d'autres sont des éditeurs de texte généraux.
-Je vous conseille d'utiliser un éditeur de texte avec lequel vous êtes à l'aise. En voici quelques-uns:
+Les éditeurs de texte les plus populaires pour LaTeX sont:
 
 \begin{itemize}
     \item \textbf{TeXworks}: Un éditeur de texte simple et léger, spécialement conçu pour LaTeX.
-    \item \textbf{TeXstudio}: Un éditeur de texte plus avancé avec de nombreuses fonctionnalités, 
+    \item \textbf{TeXstudio}\(\color{astral}\star\): Un éditeur de texte plus avancé avec de nombreuses fonctionnalités,
     y compris la complétion automatique, la gestion des références bibliographiques et l'utilisation de macros.
-    \item \textbf{VSCode}: Un éditeur de texte polyvalent qui prend en charge LaTeX via des extensions.
+    \item \textbf{VSCode}\(\color{astral}\star\star\): Un éditeur de texte polyvalent qui prend en charge LaTeX via des extensions.
 \end{itemize}
 
 J'ai commencé par Overleaf, puis j'ai utilisé TeXstudio pendant un certain temps avant de passer à VSCode.
+
+\subsection{Installation de LaTeX}\label{subsec:installation}
+Pour rédiger des documents LaTeX, vous devez installer une distribution LaTeX.
+Il existe plusieurs distributions LaTeX disponibles selon votre système d'exploitation.
+\begin{itemize}
+    \item \textbf{TeX Live}\(\color{astral}\star\star\): C'est la distribution LaTeX la plus populaire et elle est disponible pour Windows, macOS et Linux.
+    \item \textbf{MiKTeX}\(\color{astral}\star\): Une autre distribution LaTeX populaire, principalement pour Windows.
+    \item \textbf{MacTeX}: Une distribution LaTeX spécialement conçue pour macOS.\@
+\end{itemize}
+
+J'utilise personnellement \textbf{TeX Live} sur Windows mais j'ai commencé avec \textbf{MiKTeX}.
+
+Pour installer la distribution LaTeX, suivez les étapes ci-dessous:
+
+\begin{enumerate}
+    \item Téléchargez la distribution LaTeX de votre choix:
+    \begin{itemize}
+        \item Pour TeX Live, rendez-vous sur \href{https://www.tug.org/texlive/}{\url{https://www.tug.org/texlive/}}.
+        \item Pour MiKTeX, rendez-vous sur \href{https://miktex.org/download}{\url{https://miktex.org/download}}.
+        \item Pour MacTeX, rendez-vous sur \href{https://tug.org/mactex/}{\url{https://tug.org/mactex/}}.
+    \end{itemize}
+    \item Suivez les instructions d'installation pour votre système d'exploitation.
+    \item Une fois l'installation terminée, assurez-vous que le chemin vers les exécutables LaTeX est ajouté à votre variable d'environnement PATH.\@
+    Cela permet à votre système de trouver les commandes LaTeX lorsque vous les exécutez depuis la ligne de commande ou votre éditeur de texte.
+\end{enumerate}
 
 \subsection{Tester son installation}\label{subsec:test_installation}
 
 Pour tester votre installation, vous pouvez créer un document LaTeX simple et le compiler:
 
 \begin{enumerate}
-    \item Créez un nouveau fichier \texttt{test.tex} dans votre éditeur de texte,
-    \item Copiez le code suivant dans le fichier: %\lstinputlisting{resources/test.tex}
-\begin{lstlisting}[style=latexstyle]
-\documentclass{article}
-\usepackage{amsmath}
-\begin{document}
-Hello, \LaTeX{}!
-\end{document}
-\end{lstlisting}
-    \item Compilez le fichier en ligne de commande par exemple avec \texttt{pdflatex test.tex}.
+    \item Créez un nouveau fichier \texttt{test.tex} dans votre éditeur de texte préféré.
+    \item Copiez le code suivant dans votre fichier:
+\begin{listing}[!htb]
+\inputminted[frame=single,framesep=4pt,breaklines]{latex}{./2_Installation/test.tex}
+\caption{Contenu du fichier \texttt{test.tex}}\label{lst:test_file}
+\end{listing}
+    \item Enregistrez le fichier.
+    \item Compilez le fichier:
+    \begin{itemize}
+        \item Si vous utilisez un éditeur en ligne comme Overleaf, il suffit de cliquer sur le bouton de compilation.
+        \item Si vous utilisez un éditeur de texte local, ouvrez une ligne de commande et naviguez jusqu'au répertoire contenant votre fichier \texttt{test.tex}.
+        Ensuite, exécutez la commande suivante:
+\begin{listing}[!htb]
+\begin{tcolorbox}[coltext=terminalwhite, colback=terminalblack, colframe=terminalwhite, boxrule=0pt, sharp corners=all]
+\inputminted[breaklines]{bash}{./2_Installation/compile_test.sh}
+\end{tcolorbox}
+\caption{Script de compilation pour le fichier \texttt{test.tex}}\label{lst:compile_test_script}
+\end{listing}
+    \end{itemize}
 \end{enumerate}
 
-Si tout fonctionne correctement, vous devriez obtenir un fichier PDF nommé \texttt{test.pdf} contenant le texte \og{}Hello, LaTeX!\fg{} et une équation intégrale.
+Si tout fonctionne correctement, vous devriez obtenir un fichier PDF nommé \texttt{test.pdf} contenant le texte \og{}Hello, \LaTeX!\fg{}.
 
-Si vous obtenez également plein d'autres fichiers, ne paniquez pas, c'est normal.
-LaTeX génère plusieurs fichiers auxiliaires lors de la compilation, on verra comment les utiliser plus tard.
+Vous obtiendrez également plein d'autres fichiers, ne paniquez pas, c'est normal.
+LaTeX génère plusieurs fichiers auxiliaires lors de la compilation, on verra comment les utiliser ou 
+les cacher plus loin.
 
-\subsection{Options avancées}\label{subsec:advanced_options}
+\subsection{Informations importantes}\label{subsec:important_info}
+Avant de commencer à rédiger des documents LaTeX, il est important de connaître quelques informations clés sur LaTeX et son fonctionnement.
 
-Si vous souhaitez aller plus loin, il existe plusieurs options avancées pour personnaliser votre installation LaTeX.
+\subsubsection{Les fichiers auxiliaires}\label{subsubsec:auxiliary_files}
+Lorsque vous compilez un document LaTeX, plusieurs fichiers auxiliaires sont générés.
+Ces fichiers sont utilisés pour stocker des informations sur la mise en page, les références croisées, les bibliographies, etc.
+Par exemple, si vous compilez un fichier \texttt{test.tex}, vous obtiendrez les fichiers suivants:
+\begin{itemize}
+    \item \texttt{test.aux}: Fichier auxiliaire contenant des informations sur les références croisées,
+    \item \texttt{test.log}: Fichier journal contenant des informations sur la compilation,
+    \item \texttt{test.out}: Fichier de sortie contenant des informations sur les références croisées,
+    \item \texttt{test.pdf}: Le fichier PDF généré.
+\end{itemize}
 
-\subsubsection{Gestion des packages}\label{subsubsec:package_management}
+Pour plus d'informations je vous conseille de lire la réponse
+\href{https://tex.stackexchange.com/questions/597675/understanding-all-output-files-when-compiling-a-latex-document}{\textit{Understanding all output files when compiling a LaTeX document}} sur TeX Stack Exchange.
+
+\subsubsection{Les packages}\label{subsubsec:package_management}
 
 La première étape importante pour écrire des documents avancés est de gérer ses packages.
 
 LaTeX utilise des packages pour ajouter des fonctionnalités supplémentaires à votre document.
 Vous pouvez installer des packages supplémentaires en utilisant le gestionnaire de packages de votre distribution LaTeX
-ou en les téléchargeant manuellement.
+ou en les téléchargeant manuellement. J'utilise quasiment
+toujours les packages suivants dans mes documents:
+\begin{itemize}
+    \item \texttt{amsmath}: Pour les mathématiques avancées,
+    \item \texttt{graphicx}: Pour inclure des images,
+    \item \texttt{hyperref}: Pour créer des liens hypertextes dans le document,
+    \item \texttt{geometry}: Pour personnaliser la mise en page du document,
+\end{itemize}
 
 \subsubsection{Compilateurs}\label{subsubsec:compilers}
 
@@ -87,12 +149,34 @@ LaTeX prend en charge plusieurs compilateurs, chacun ayant ses propres avantages
 Les plus courants sont:
 
 \begin{itemize}
-    \item \textbf{pdfLaTeX}: Le compilateur par défaut, qui génère des fichiers PDF,
+    \item \textbf{pdfLaTeX}\(\color{astral}\star\star\): Le compilateur le plus simple à utiliser, qui génère des fichiers PDF à partir de documents LaTeX,
     \item \textbf{XeLaTeX}: Un compilateur qui prend en charge les polices OpenType et TrueType,
     ainsi que les langues non latines,
     \item \textbf{LuaLaTeX}: Un compilateur qui utilise le moteur Lua pour la programmation et la personnalisation avancée,
-    \item \textbf{Latexmk}: Un script Perl qui automatise le processus de compilation de documents LaTeX.
+    \item \textbf{Latexmk}\(\color{astral}\star\star\): Un outil de compilation qui automatise le processus de compilation en exécutant plusieurs passes
+    pour résoudre les références croisées, les bibliographies, etc.
 \end{itemize}
 
-Pour des documents simples, pdfLaTeX est généralement suffisant.
-Pour des projets plus avancés il est souvent préférable de passer plutôt par Latexmk.
+Dans la majorité des cas, vous pouvez utiliser \textbf{pdfLaTeX} pour compiler vos documents LaTeX.
+Si vous voulez automatiser le processus de compilation (par exemple pour compiler plusieurs fois pour résoudre les références croisées), vous pouvez utiliser \textbf{Latexmk}.
+
+\subsubsection{Les erreurs de compilation}\label{subsubsec:compilation_errors}
+
+Lorsque vous compilez un document LaTeX, il est possible que vous rencontriez des erreurs de compilation.
+Ces erreurs peuvent être dues à des fautes de frappe, des erreurs de syntaxe ou des problèmes de configuration.
+
+Il est impératif de lire attentivement les messages d'erreur dans le fichier \texttt{*.log} pour comprendre la cause de l'erreur.
+
+Il contient souvent toutes les informations nécessaires pour résoudre le problème.
+
+\subsubsection{Les ressources en ligne}\label{subsubsec:online_resources}
+Il existe de nombreuses ressources en ligne pour vous aider à apprendre LaTeX et à résoudre les problèmes que vous pourriez rencontrer.
+En voici quelques-unes:
+\begin{itemize}
+    \item \textbf{LaTeX Wikibook}: Un livre en ligne complet sur LaTeX, couvrant tous les aspects de LaTeX.
+    \item \textbf{TeX Stack Exchange}: Un site de questions-réponses où vous pouvez poser des questions et obtenir de l'aide de la part de la communauté LaTeX.
+    \item \textbf{CTAN (Comprehensive TeX Archive Network)}: Le dépôt officiel des packages LaTeX, où vous pouvez trouver des packages supplémentaires et leur documentation.
+    \item \textbf{Overleaf Documentation}: La documentation officielle d'Overleaf, qui couvre beaucoup de sujets simples.
+    % ref vers mon guide en dessous
+    \item \textbf{Mon guide LaTeX}\footnote{Disponible sur \href{https://github.com/Ivan23BG/Latex_Guide}{\url{https://github.com/Ivan23BG/Latex_Guide}}}: Un guide que j'ai écrit pour aider tout le monde à apprendre LaTeX.
+\end{itemize}

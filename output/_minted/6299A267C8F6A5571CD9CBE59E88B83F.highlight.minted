@@ -1,0 +1,31 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Classe du document (article, report, book, etc.)}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Encodage des caracteres (obligatoire pour les accents)}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[T1]}\PYG{n+nb}{\PYGZob{}}fontenc\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Meilleure gestion des fontes (cesures, accents copiables)}
+
+\PYG{c}{\PYGZpc{} Packages utiles (ajoutez selon vos besoins)}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}amsmath\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Pour les mathematiques}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}graphicx\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Pour les images}
+
+\PYG{c}{\PYGZpc{} Debut du document}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Titre de l\PYGZsq{}Article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Votre Nom\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} Date automatique}
+\PYG{k}{\PYGZbs{}maketitle}  \PYG{c}{\PYGZpc{} Affiche le titre}
+
+\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Introduction\PYG{n+nb}{\PYGZcb{}}
+Voici un paragraphe. LaTeX gere automatiquement les marges, l\PYGZsq{}interligne et la justification.
+
+\PYG{k}{\PYGZbs{}subsection}\PYG{n+nb}{\PYGZob{}}Une sous\PYGZhy{}section\PYG{n+nb}{\PYGZcb{}}
+Les sous\PYGZhy{}sections sont numerotees automatiquement.
+
+\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Mathematiques\PYG{n+nb}{\PYGZcb{}}
+Les equations en ligne s\PYGZsq{}ecrivent avec \PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{E}\PYG{o}{=}\PYG{n+nb}{mc\PYGZca{}}\PYG{l+m}{2}\PYG{l+s}{\PYGZbs{})}, et les equations hors ligne avec :
+\PYG{l+s+sb}{\PYGZbs{}[}
+\PYG{n+nv}{\PYGZbs{}int}\PYG{n+nb}{\PYGZus{}}\PYG{l+m}{0}\PYG{n+nb}{\PYGZca{}}\PYG{l+m}{1}\PYG{n+nb}{ x\PYGZca{}}\PYG{l+m}{2}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{},}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}mathrm}\PYG{n+nb}{\PYGZob{}d\PYGZcb{}x }\PYG{o}{=}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{l+m}{1}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{l+m}{3}\PYG{n+nb}{\PYGZcb{}.}
+\PYG{l+s}{\PYGZbs{}]}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

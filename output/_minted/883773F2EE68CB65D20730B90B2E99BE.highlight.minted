@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+pdflatex\PYG{+w}{ }test.tex
+\end{MintedVerbatim}

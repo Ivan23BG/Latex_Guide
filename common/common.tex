@@ -133,57 +133,17 @@
 \usepackage[breaklinks]{hyperref} % pour casser les liens hypertextes
 \usepackage{breakurl} % pour casser les liens hypertextes
 \usepackage{amsmath} % pour les formules mathématiques
-\usepackage{listings} % pour le code
+\usepackage{minted} % pour le code
+\renewcommand{\listingscaption}{Code}
+\renewcommand{\listoflistingscaption}{List of Program Code}
+\definecolor{bg}{rgb}{.9, .9, .9}
 
-% Define colors
-\definecolor{latexbg}{rgb}{0.96,0.96,0.96}
-\definecolor{latexkeyword}{rgb}{0.6,0.0,0.4}  % purple for commands
-\definecolor{latexcomment}{rgb}{0.5,0.5,0.5}  % grey for comments
-\definecolor{latexstring}{rgb}{0.0,0.5,0.0}   % green for text
-
-
-
-
-% Special LaTeX listing definition
-\lstdefinelanguage{TeX}{
-    keywords=[1]{\\usepackage,\\documentclass,\\begin,\\end,\\section,\\subsection,
-        \\textbf,\\textit,\\texttt,\\input,\\include,\\newcommand,\\renewcommand,
-        \\newenvironment,\\graphicspath,\\includegraphics,\\caption,\\label,
-        \\ref,\\cite,\\bibliography,\\tableofcontents},
-    keywords=[2]{\\alpha,\\beta,\\gamma,\\delta,\\epsilon,\\zeta,\\eta,\\theta,
-        \\iota,\\kappa,\\lambda,\\mu,\\nu,\\xi,\\pi,\\rho,\\sigma,\\tau,
-        \\upsilon,\\phi,\\chi,\\psi,\\omega,\\Gamma,\\Delta,\\Theta,\\Lambda,
-        \\Xi,\\Pi,\\Sigma,\\Upsilon,\\Phi,\\Psi,\\Omega},
-    keywordstyle=[1]\color{latexkeyword},
-    keywordstyle=[2]\color{blue!70!black},
-    comment=[l]\%,
-    commentstyle=\color{latexcomment}\ttfamily,
-    string=[s]{{\$}{\$}},
-    string=[s]{\{}{\}},
-    stringstyle=\color{latexstring},
-    morestring=[s]{[}{]},
-    morestring=[s]{(}{)},
+\usepackage{tcolorbox}
+\definecolor{terminalblack}{RGB}{18, 18, 18}
+\definecolor{terminalwhite}{RGB}{204, 204, 204}
+\newtcolorbox{terminalbox}{%
+	colback=terminalblack,
+	colframe=terminalwhite,
+	coltext=terminalwhite,
+	sharp corners=all,
 }
-
-% Main style definition
-\lstdefinestyle{latexstyle}{
-    language=TeX,
-    backgroundcolor=\color{latexbg},
-    basicstyle=\ttfamily\small,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    frame=single,
-    framesep=5pt,
-    keepspaces=true,
-    rulecolor=\color{black!30},
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-    stepnumber=1,
-    tabsize=2,
-    xleftmargin=15pt,
-    xrightmargin=5pt
-}
-
-\lstset{style=latexstyle}

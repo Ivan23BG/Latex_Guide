@@ -1,15 +1,35 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\nameref {subsec:why_latex}}{2}{section*.2}%
-\contentsline {subsection}{\nameref {subsec:what_you_will_find}}{2}{section*.3}%
-\contentsline {subsection}{\nameref {subsec:target_audience}}{2}{section*.4}%
-\contentsline {subsection}{\nameref {subsec:how_to_use_this_guide}}{2}{section*.5}%
-\contentsline {section}{\numberline {2}Installation}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}LaTeX en ligne}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Installation de LaTeX}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Installation de l'éditeur de texte}{3}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Tester son installation}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Options avancées}{4}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Gestion des packages}{4}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Compilateurs}{4}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {1.1}Pourquoi Latex?}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ce que vous trouverez dans ce guide}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Public visé}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Comment utiliser ce guide}{2}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Installation et premiers pas}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Quelle plateforme utiliser?}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Éditeurs en ligne}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Éditeurs de texte locaux}{3}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Installation de LaTeX}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Tester son installation}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Informations importantes}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Les fichiers auxiliaires}{5}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Les packages}{5}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Compilateurs}{5}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Les erreurs de compilation}{5}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Les ressources en ligne}{6}{subsubsection.2.4.5}%
+\contentsline {section}{\numberline {3}Structure}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Le squelette}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Les différentes parties d'un document}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Les environnements}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Les commandes}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Les éléments de mise en forme}{8}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Ce que vous devez retenir}{9}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Les Mathématiques}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Les mathématiques en LaTeX}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Les 2 modes d'écriture}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Les symboles mathématiques}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Les choses à savoir}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Les environnements spécialisés}{12}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Le référencement}{12}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Les Figures et les Tableaux}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Les figures}{13}{subsection.5.1}%
 \contentsfinish 

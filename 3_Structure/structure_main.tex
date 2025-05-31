@@ -1,0 +1,94 @@
+Pour ceux qui veulent du concret sans se perdre dans les details,
+la section suivante présente la structure de base d'un document LaTeX.
+
+\subsection{Le squelette}\label{subsec:latex_skeleton}
+\begin{listing}[H]
+\inputminted[frame=single,framesep=4pt,breaklines]{latex}{./3_Structure/latex_skeleton.tex}
+\caption{Squelette d'un document LaTeX}
+\label{lst:latex_skeleton}
+\end{listing}
+
+\subsection{Les différentes parties d'un document}\label{subsec:latex_parts}
+
+Un document LaTeX s'écrit en plusieurs parties:
+
+\begin{itemize}
+    \item \textbf{Préambule}: C'est la première partie du document, où vous définissez le type de document, les packages à utiliser et d'autres paramètres globaux.
+
+    Dans le code~\ref{lst:latex_skeleton}, le préambule est constitué des lignes 1 à 7.
+    On commence par définir le type de document, ici un article (ce sera souvent le cas)
+    et puis on charge les packages nécessaires.
+
+    \item \textbf{Corps du document}: C'est la partie principale du document, 
+    où vous écrivez le contenu de votre document, y compris les sections, les sous-sections, 
+    les figures, les tableaux, etc.
+
+    Dans le code~\ref{lst:latex_skeleton}, le corps du document est constitué des lignes 10 à 29.
+\end{itemize}
+
+Le préambule commence souvent avec les mêmes packages mais 
+n'hésitez pas à ajouter des packages plus tard si vous en avez besoin.
+
+\subsection{Les environnements}\label{subsec:latex_environments}
+
+Un environnement est une partie du document qui a un comportement particulier.
+Il est délimité par des commandes \texttt{\textbackslash{}begin\{\ldots\}} et \texttt{\textbackslash{}end\{\ldots\}}.
+
+Il existe de nombreux environnements prédéfinis dans LaTeX, chacun ayant une fonction spécifique.
+Il est même possible de créer ses propres environnements.
+
+Les plus utiles sont:
+\begin{itemize}
+    \item \texttt{document}: C'est l'environnement principal qui contient le corps du document.
+    \item \texttt{itemize}: C'est un environnement pour créer des listes à puces.
+    \item \texttt{enumerate}: C'est un environnement pour créer des listes numérotées.
+    \item \texttt{figure}: C'est un environnement pour insérer des figures.
+    \item \texttt{equation}: C'est un environnement pour écrire des équations mathématiques.
+    \item \texttt{table}: C'est un environnement pour créer des tableaux.
+\end{itemize}
+
+Mais il en existe beaucoup d'autres et vous verrez plus tard comment les utiliser.
+
+\subsection{Les commandes}\label{subsec:latex_commands}
+Une commande est une instruction qui dit à LaTeX de faire quelque chose.
+Elle commence généralement par un backslash (\texttt{\textbackslash}) et peut avoir des arguments entre accolades \texttt{\{\}} ou entre crochets \texttt{[ ]}.
+Les arguments entre accolades sont obligatoires, tandis que ceux entre crochets sont optionnels.
+
+Par exemple, la commande \texttt{\textbackslash{}section\{Titre\}} crée une section avec le titre \og{}Titre\fg{}.
+La commande \texttt{\textbackslash{}textbf\{Texte\}} met le mot \og{}Texte\fg{} en gras.
+Il existe de nombreuses commandes prédéfinies dans LaTeX. Vous pouvez également créer vos propres commandes.
+
+D'ailleurs, les commandes custom sont souvent très utiles pour éviter de répéter du code.
+Vous pouvez les définir dans le préambule de votre document.
+
+\subsection{Les éléments de mise en forme}\label{subsec:latex_formatting}
+LaTeX propose de nombreux éléments de mise en forme pour personnaliser l'apparence de votre document.
+Voici quelques-uns des plus courants:
+\begin{itemize}
+    \item \texttt{\textbackslash{}textbf\{\}}: Met le texte en gras.
+    \item \texttt{\textbackslash{}textit\{\}}: Met le texte en italique.
+    \item \texttt{\textbackslash{}underline\{\}}: Souligne le texte.
+    \item \texttt{\textbackslash{}textcolor\{couleur\}\{\}}: Change la couleur du texte.
+\end{itemize}
+
+Pour ce qui est des éléments de mise en forme du document, il y a:
+
+\begin{itemize}
+    \item \texttt{\textbackslash{}title\{\}}: Définit le titre du document.
+    \item \texttt{\textbackslash{}author\{\}}: Définit l'auteur du document.
+    \item \texttt{\textbackslash{}date\{\}}: Définit la date du document.
+    \item \texttt{\textbackslash{}maketitle}: Génère la page de titre du document.
+    \item \texttt{\textbackslash{}tableofcontents}: Génère la table des matières du document.
+    \item \texttt{\textbackslash{}section\{\}}: Crée une nouvelle section dans le document.
+    \item \texttt{\textbackslash{}subsection\{\}}: Crée une nouvelle sous-section dans le document.
+\end{itemize}
+
+\subsection{Ce que vous devez retenir}\label{subsec:latex_what_to_remember}
+
+Si vous avez bien regardé tous les exemples ci-dessus, vous avez dû remarquer que
+la plupart des commandes et environnements sont en anglais. Plus fort que ça,
+si vous avez besoin d'un certain type d'élément ou d'effectuer une certaine action,
+il est fort probable que cette commande existe déjà et qu'il suffit de trouver son nom (en anglais).
+
+Il est donc important de bien se familiariser avec la documentation de LaTeX et de ses packages.
+Au début vous passerez beaucoup de temps à chercher de nouvelles commandes. Mais avec la pratique votre rédaction sera plus fluide et automatique.

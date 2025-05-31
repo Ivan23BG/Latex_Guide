@@ -1,0 +1,29 @@
+\documentclass{article}  % Classe du document (article, report, book, etc.)
+\usepackage[utf8]{inputenc}  % Encodage des caracteres (obligatoire pour les accents)
+\usepackage[T1]{fontenc}  % Meilleure gestion des fontes (cesures, accents copiables)
+
+% Packages utiles (ajoutez selon vos besoins)
+\usepackage{amsmath}  % Pour les mathematiques
+\usepackage{graphicx}  % Pour les images
+
+% Debut du document
+\begin{document}
+
+\title{Titre de l'Article}
+\author{Votre Nom}
+\date{\today}  % Date automatique
+\maketitle  % Affiche le titre
+
+\section{Introduction}
+Voici un paragraphe. LaTeX gere automatiquement les marges, l'interligne et la justification.
+
+\subsection{Une sous-section}
+Les sous-sections sont numerotees automatiquement.
+
+\section{Mathematiques}
+Les equations en ligne s'ecrivent avec \(E=mc^2\), et les equations hors ligne avec :
+\[
+\int_0^1 x^2 \, \mathrm{d}x = \frac{1}{3}.
+\]
+
+\end{document}
