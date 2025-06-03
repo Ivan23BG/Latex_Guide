@@ -1,3 +1,4 @@
+\section{Les Mathématiques}\label{sec:math}
 Un des intérêts principaux de LaTeX est sa gestion
 formidable des mathématiques.
 Il est donc important de savoir comment écrire des formules mathématiques.
@@ -38,16 +39,67 @@ mais il est utile d'en connaître certains éléments.
 Il existe deux manières principales d'écrire des formules mathématiques en LaTeX:\@
 
 \begin{itemize}
-    \item \textbf{Inline math mode}: C'est le mode par défaut pour écrire des formules mathématiques dans le texte.
-    Il ressemble à ceci: \(a + b = c\) et s'écrit entre des signes \texttt{\textbackslash( \(\cdot\) \textbackslash)}
+    \item \textbf{Inline math mode}: C'est le mode par défaut pour écrire des formules mathématiques au
+    sein du texte. Il permet d'écrire des formules mathématiques courtes et simples. 
+    Pour l'utiliser, il suffit d'entourer la formule des symboles \mintinline{latex}{\( \)}.
+    
+    Par exemple, le code \mintinline{latex}{\(a + b = c\)} 
+    permet d'écrire \(a + b = c\) dans le texte.
 
     \item \textbf{Display math mode}: C'est le mode pour écrire des formules mathématiques plus grandes et plus complexes.
-    Il ressemble à ceci:
+    Il est utilisé pour écrire des formules mathématiques qui prennent plus de place
+    ou qui sont plus complexes. 
+    Pour l'utiliser, il suffit d'entourer la formule de l'environnement \mintinline{latex}{\begin{equation} \end{equation}}
+    ou des symboles \mintinline{latex}{\[ \]}.
+
+    Par exemple, le code suivant
+    \begin{minted}[frame=single, breaklines]{latex}
+\begin{equation}
+    \int_{0}^{1} x^2 \, dx = \frac{1}{3}
+\end{equation}
+    \end{minted}
+    permet d'écrire
     \begin{equation}
-        \int_0^1 x^2 \, dx = \frac{1}{3}
+        \int_{0}^{1} x^2 \, dx = \frac{1}{3}
     \end{equation}
-    et s'écrit entre des signes \texttt{\textbackslash[ \(\cdot\) \textbackslash]} ou 
-    dans un environnement mathématique comme \texttt{equation}.
+    Voici les effets des différents éléments de ce code:
+    \begin{itemize}
+        \item \mintinline{latex}{\begin{equation}} et \mintinline{latex}{\end{equation}}:
+        \begin{itemize}
+            \item Ils permettent de commencer et de finir l'environnement d'une équation numérotée.
+            \item Si vous ne voulez pas de numéro, utilisez \mintinline{latex}{\begin{equation*}} et \mintinline{latex}{\end{equation*}}.
+        \end{itemize}
+        \item \mintinline{latex}{\int_{0}^{1}}: Cela permet d'écrire l'intégrale de \(0\) à \(1\). 
+        \begin{itemize}
+            \item Le symbole \mintinline{latex}{\int} permet d'écrire l'intégrale.
+            \item Le symbole \mintinline{latex}{_{0}} permet d'écrire la borne inférieure de l'intégrale.
+            \item Le symbole \mintinline{latex}{^{1}} permet d'écrire la borne supérieure de l'intégrale.
+        \end{itemize}
+
+        \item \mintinline{latex}{x^2}: Cela permet d'écrire \(x\) au carré.
+        \begin{itemize}
+            \item Le symbole \mintinline{latex}{^} permet d'écrire l'exposant.
+            \item Il est possible d'utiliser des exposants plus complexes comme \mintinline{latex}{x^{2n}} pour \(x^{2n}\).
+        \end{itemize}
+
+        \item \mintinline{latex}{\, dx}: Cela permet d'écrire \(dx\) avec un espace avant.
+        \begin{itemize}
+            \item Le symbole \mintinline{latex}{\,} permet d'ajouter un espace entre les symboles.
+            \item Il est possible d'utiliser d'autres espaces comme \mintinline{latex}{\quad} pour un espace plus grand ou \mintinline{latex}{\qquad} pour un espace encore plus grand.
+            \item Il est aussi possible d'utiliser \mintinline{latex}{\!} pour enlever un espace.
+        \end{itemize}
+
+        \item \mintinline{latex}{= \frac{1}{3}}: Cela permet d'écrire l'égalité avec la fraction.
+        \begin{itemize}
+            \item Le symbole \mintinline{latex}{=} permet d'écrire l'égalité.
+            \item Le symbole \mintinline{latex}{\frac{1}{3}} permet d'écrire la fraction \(\frac{1}{3}\).
+            \item Il est possible d'utiliser des fractions plus complexes comme \mintinline{latex}{\frac{x^2 + 1}{x - 1}} pour \(\frac{x^2 + 1}{x - 1}\)
+            où le premier argument de \mintinline{latex}{\frac{}{}} est le numérateur et le second argument est le dénominateur.
+        \end{itemize}
+
+        \item Pour les autres symboles mathématiques, il est possible de deviner le nom de la commande
+        ou alors de chercher dans la documentation de LaTeX.
+    \end{itemize}
 \end{itemize}
 
 Il est important de savoir qu'il vaut mieux éviter d'utiliser le mode inline
@@ -73,25 +125,26 @@ documentation de LaTeX (le site est vraiment très fort). Je vous en donne quand
 \begin{itemize}
     \item \textbf{Les symboles de base}:
     \begin{itemize}
-        \item \texttt{\textbackslash{}geq} pour \(\geq\)
-        \item \texttt{\textbackslash{}infty} pour \(\infty\)
-        \item \texttt{\textbackslash{}exists} pour \(\exists\)
-        \item \texttt{\textbackslash{}int} pour \(\int\)
-        \item \texttt{\textbackslash{}sum} pour \(\sum\)
+        \item \mintinline{latex}{\geq} pour \(\geq\)
+        \item \mintinline{latex}{\infty} pour \(\infty\)
+        \item \mintinline{latex}{\exists} pour \(\exists\)
+        \item \mintinline{latex}{\int} pour \(\int\)
+        \item \mintinline{latex}{\sum} pour \(\sum\)
         \item Encore une fois, il est facile de deviner le nom de la commande
     \end{itemize}
     \item \textbf{Les symboles de logique}:
     \begin{itemize}
-        \item \texttt{\textbackslash{}land} pour \(\land\)
-        \item \texttt{\textbackslash{}lor} pour \(\lor\)
-        \item Remarquez que c'est simplement le nom anglais précédée de \texttt{\textbackslash{}l}
+        \item \mintinline{latex}{\land} pour \(\land\)
+        \item \mintinline{latex}{\lor} pour \(\lor\)
+        \item Remarquez que c'est simplement le nom anglais précédée de \og{}l \fg{}
+        où \og{}l \fg{} signifie \og{}logique \fg{}
     \end{itemize}
     \item \textbf{Les environnements mathématiques}:
     \begin{itemize}
-        \item \texttt{\textbackslash{}begin\{equation\}} et \texttt{\textbackslash{}end\{equation\}} pour écrire une équation
-        \item \texttt{\textbackslash{}begin\{align\}} et \texttt{\textbackslash{}end\{align\}} pour écrire une équation alignée
+        \item \mintinline{latex}{\begin{equation}} et \mintinline{latex}{\end{equation}} pour écrire une équation
+        \item \mintinline{latex}{\begin{align}} et \mintinline{latex}{\end{align}} pour écrire une équation alignée
         \item Si vous ne voulez pas d'équation numérotée, rajoutez un \texttt{*} à la fin de l'environnement
-        \item Par exemple, \texttt{\textbackslash{}begin\{equation*\}} et \texttt{\textbackslash{}end\{equation*\}}
+        \item Par exemple, \mintinline{latex}{\begin{equation*}} et \mintinline{latex}{\end{equation*}}
     \end{itemize}
 \end{itemize}
 
@@ -102,23 +155,23 @@ il y a des éléments qui ne ressemblent pas à des simples symboles. En effet,
 on peut faire plus que simplement écrire des symboles mathématiques en LaTeX.
 Il est possible de faire des choses comme:
 \begin{itemize}
-    \item \textbf{Mettre une boîte autour d'une formule} avec \texttt{\textbackslash{}boxed\{\(\cdots\)\}}:
+    \item \textbf{Mettre une boîte autour d'une formule} avec \mintinline{latex}{\boxed{xx}}:
     \begin{equation}
         \boxed{a + b = c}
     \end{equation}
-    \item \textbf{Mettre une barre autour d'une formule} avec \texttt{\textbackslash{}overline\{\(\cdots\)\}}:
+    \item \textbf{Mettre une barre autour d'une formule} avec \mintinline{latex}{\overline{xx}}:
     \begin{equation}
         \overline{a + b = c}
     \end{equation}
-    \item \textbf{Mettre une parenthèse autour d'une formule} avec \texttt{\textbackslash{}left( \(\cdots\) \textbackslash{}right)}:
+    \item \textbf{Mettre une parenthèse autour d'une formule} avec \mintinline{latex}{\left(xx\right)}:
     \begin{equation}
         \left( a + b = c \right)
     \end{equation}
-    \item \textbf{Ecrire en dessous d'une formule} avec \texttt{\textbackslash{}underbrace\{\(\cdots\)\}\textunderscore\{\(\cdots\)\}}:
+    \item \textbf{Ecrire en dessous d'une formule} avec \mintinline{latex}{\underbrace{xx}_{yy}}:
     \begin{equation}
         \underbrace{a + b = c}_{\text{C'est une équation}}
     \end{equation}
-    \item \textbf{Indicer à plusieurs niveaux} avec \texttt{\textbackslash{}substack\{\(\cdots\)\}}:
+    \item \textbf{Indicer à plusieurs niveaux} avec \mintinline{latex}{\substack{xx \\ yy}}:
     \begin{equation}
         \sum_{\substack{i=1 \\ j=2}}^{n} i + j
     \end{equation}
@@ -138,8 +191,8 @@ car il est très complet et je ne vais pas le détailler ici.
 
 \subsection{Le référencement}\label{subsec:latex_math_ref}
 
-Si vous avez été curieux, vous avez essayé de cliquer sur les références
-~\eqref{eq:2} et~\eqref{eq:3} et avez été émerveillé de voir que
+Si vous avez été curieux, vous avez essayé de cliquer sur les 
+références~\eqref{eq:2} et~\eqref{eq:3} et avez été émerveillé de voir que
 cela vous a amené directement à l'équation en question.
 C'est cela qu'on appelle le référencement.
 
@@ -147,12 +200,34 @@ On peut référencer des équations, des sections, des figures, des tableaux,
 des théorèmes, des définitions, etc. On peut référencer tout ce qu'on veut
 en LaTeX. Il suffit de faire ceci:
 \begin{enumerate}
-    \item Rajouter une \texttt{\textbackslash{}label\{\(\cdots\)\}} à l'endroit
+    \item Rajouter une \mintinline{latex}{\label{xx}} à l'endroit
     où vous voulez référencer l'élément. Il lui faut un nom unique.
-    \item Utiliser la commande \texttt{\textbackslash{}ref\{\(\cdots\)\}} pour
+    \item Utiliser la commande \mintinline{latex}{\ref{xx}} pour
     référencer l'élément.
-    \item Si vous voulez référencer une équation, utilisez \texttt{\textbackslash{}eqref\{\(\cdots\)\}}.
+    \item Si vous voulez référencer une équation, utilisez \mintinline{latex}{\eqref{xx}}.
+    \item Il est de bonne pratique de nommer les labels de manière
+    cohérente. Par exemple, pour une équation, vous pouvez utiliser
+    \mintinline{latex}{\label{eq:nom_de_l_equation}} et pour une section,
+    \mintinline{latex}{\label{sec:nom_de_la_section}}. Cela permet de
+    retrouver facilement les labels dans le code source et
+    d'éviter les conflits de noms.
 \end{enumerate}
 
 Attention, ce référencement est différent de celui qu'on utilise
-dans les bibliographies. Il ne faut pas confondre les deux.
+dans les bibliographies. Il ne faut pas confondre les deux. Celui-ci
+est plus simple et ne nécessite pas de package supplémentaire.
+Il sera détaillé plus tard.
+
+\subsection{Conclusion}\label{subsec:latex_math_conclusion}
+En conclusion, LaTeX est un outil formidable pour écrire des formules mathématiques.
+Il permet d'écrire des formules mathématiques de manière très élégante et
+de les référencer facilement. 
+
+Il est important de connaître les différents modes d'écriture,
+les symboles mathématiques et les environnements mathématiques pour
+pouvoir écrire des formules mathématiques de manière efficace.
+
+N'hésitez pas à expérimenter et à chercher dans la documentation 
+ou me contacter si vous avez des questions.
+Vous pouvez aussi vous entraîner en écrivant des formules mathématiques
+dans un document LaTeX vierge et en les compilant pour voir le résultat.

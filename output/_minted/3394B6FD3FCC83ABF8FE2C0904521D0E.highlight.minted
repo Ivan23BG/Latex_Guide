@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}maCommande}\PYG{n+nb}{\PYGZcb{}}[nbargs]\PYG{n+nb}{\PYGZob{}}effet de la commande\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

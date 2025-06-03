@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}int\PYGZus{}}\PYG{n+nb}{\PYGZob{}}0\PYG{n+nb}{\PYGZcb{}\PYGZca{}\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}} x\PYG{n+nb}{\PYGZca{}}2 \PYG{k}{\PYGZbs{},} dx = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}3\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

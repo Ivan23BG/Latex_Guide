@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Les lignes suivantes sont optionnelles \PYGZhy{}\PYGZhy{}\PYGZhy{} \PYGZpc{}}
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Titre de votre document\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Votre nom\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} Date du jour}
+\PYG{k}{\PYGZbs{}maketitle} \PYG{c}{\PYGZpc{} Génère la page de titre}
+\PYG{k}{\PYGZbs{}tableofcontents} \PYG{c}{\PYGZpc{} Génère la table des matières}
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Fin des lignes optionnelles \PYGZhy{}\PYGZhy{}\PYGZhy{} \PYGZpc{}}
+
+\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Exemple de section\PYG{n+nb}{\PYGZcb{}}
+Voici un exemple de section dans votre document et son contenu.
+
+\PYG{k}{\PYGZbs{}subsection}\PYG{n+nb}{\PYGZob{}}Exemple de sous\PYGZhy{}section\PYG{n+nb}{\PYGZcb{}}
+Voici un exemple de sous\PYGZhy{}section dans votre document et son contenu.
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}
